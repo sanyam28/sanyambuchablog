@@ -55,7 +55,7 @@ export default Home
 
 export async function getServerSideProps() {
   await dbConnect();
-  let blogs = await Blog.find().limit(3).sort({'createdAt': 1});
+  let blogs = await Blog.find().limit(3).sort({'createdAt': -1});
 
   return {
     props: { blogs: JSON.parse(JSON.stringify(blogs)) }
