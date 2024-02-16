@@ -9,6 +9,7 @@ const BlogS = ({ blog }) => {
     <div>
       <Head>
         <title>{blog.title} - Sanyam Bucha</title>
+        <meta name="description" content={blog.description} />
       </Head>
       <div className="blog-content">
         <h1 style={{color:"blue"}}>{blog.title}</h1>

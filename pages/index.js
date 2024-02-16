@@ -10,6 +10,8 @@ const Home = ({blogs}) => {
     <div>
       <Head>
         <title>Home - Sanyam Bucha</title>
+        <meta name="title" content="Sanyam Bucha" />
+        <meta name="description" content="Hey My name is Sanyam. My awesome projects" />
       </Head>
       <section>
         <div className="cta-banner">

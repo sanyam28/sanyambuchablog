@@ -9,6 +9,7 @@ const Blogs = ({ blogs, totalblogs }) => {
     <div>
       <Head>
         <title>Blogs - Sanyam Bucha</title>
+        <meta name="description" content="Incredible Projects" />
       </Head>
       <section>
         <div className="container">
