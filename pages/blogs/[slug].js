@@ -10,6 +10,15 @@ const BlogS = ({ blog }) => {
       <Head>
         <title>{blog.title} - Sanyam Bucha</title>
         <meta name="description" content={blog.description} />
+        <meta property="og:title" content={blog.title + " - Sanyam Bucha"} />
+        <meta
+          property="og:description"
+          content={blog.description}
+        />
+        <meta
+          property="og:image"
+          content={blog.image}
+        />
       </Head>
       <div className="blog-content">
         <h1 style={{color:"blue"}}>{blog.title}</h1>
