@@ -23,7 +23,7 @@ export default BlogS
 export async function getServerSideProps(context) {
   await connectDb();
 
-  let blogres = await Blog.findOne({ slug: context.query.slug });
+  let blogres = await Blog.findOne({ slug: context.query.slug, is_published:true });
   let blog = JSON.parse(JSON.stringify(blogres))
 
   if (!blog) {

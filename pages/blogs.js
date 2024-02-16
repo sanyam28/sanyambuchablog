@@ -43,7 +43,7 @@ export default Blogs
 
 export async function getServerSideProps() {
   await dbConnect();
-  let blogs = await Blog.find();
+  let blogs = await Blog.find({is_published:true});
   let totalblogs = blogs.length;
 
   return {
